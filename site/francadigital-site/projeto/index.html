@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+    </div>
+    <main class="page">
+        <section class="grid">
+            <article class="card">
+                <h2>1 - Alterar a cor do site</h2>
+                <p>Escolha uma cor: </p>
+                <input type="color" id="seletorCor" value="#000">
+                <button id="btnAplicarCor">Aplicar cor</button>
+
+            </article>
+            <article class="card">
+                <h2>2 - Galeria Dinâmica</h2>
+                <p>Clique para alterar a imagem</p>
+                <div class="chips">
+                    <button class="chip" data-image="https://images.unsplash.com/photo-1475070929565-c985b496cb9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGFya3xlbnwwfHwwfHx8MA%3D%3D">Floresta soft kawaii</button>
+                    <button class="chip" data-image="https://images.unsplash.com/photo-1500099817043-86d46000d58f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRhcmt8ZW58MHx8MHx8fDA%3D">Pessoa morrendo afogada</button>
+                    <button class="chip" data-image="https://images.unsplash.com/photo-1494376877685-d3d2559d4f82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRhcmt8ZW58MHx8MHx8fDA%3D">Cabana no meio do mato</button>
+                </div>
+                <div class="galeria" id="galeriaHero">
+
+                </div>
+            </article>
+            <article class="card">
+                <h2>1 - Palavra instantânea</h2>
+            </article>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

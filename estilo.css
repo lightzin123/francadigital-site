@@ -1,0 +1,24 @@
+.textin{
+    color: rgb(123, 20, 219);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+body{
+    background-color: black;
+}
+
+.img{
+    position: relative;
+    left: 40px;
+    border-radius: 15px;
+    width: 490px;
+    box-shadow: 10px 6px 5px red;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.img:hover{
+    filter: brightness(0.6);
+}

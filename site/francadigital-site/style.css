@@ -1,0 +1,73 @@
+        .img{
+            width: 300px;
+            cursor: pointer;
+            border-radius: 20px;
+            box-shadow: 5px 5px 7px red;
+            transition: filter 0.3s ease;
+        }
+
+        .img:hover {
+            filter: brightness(0.6); 
+        }
+
+        .gif{
+            width: 300px;
+            cursor: pointer;
+            height: 170px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 7px red;
+            transition: filter 0.6s ease;
+        }
+
+        .gif:hover {
+            filter: brightness(0.19); /* Torna o gif mais escuro ao passar o mouse */
+        }
+
+        .container{
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            border-radius: 20px;
+            
+        }
+
+        .h1{
+            color: white;
+            position: relative;
+            left: 10px;
+            font-family: "Playfair Display", serif;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        .p{
+            color: white;
+            position: relative;
+            left: 10px;
+        }
+
+        .a{
+            position: relative;
+            left: 10px;
+        }
+
+        .musifa{
+            font-family: "Playfair Display", serif;
+            position: relative;
+            left: 10px;
+            color: white;
+        }
+
+        .aurabattle{
+            display: flex;
+            align-items: center; /*texto na vertical*/
+            justify-content: center; /*horizontal*/
+            text-align: center; /*Centraliza o texto*/
+            min-height: 180px;
+            padding: 16px;
+            border: 1px solid red;
+            background: rgb(121, 14, 14);
+            margin: 19px;
+        }
