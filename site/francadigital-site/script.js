@@ -17,6 +17,6 @@ const butao = document.getElementById("btn");
 
 butao.addEventListener("click", (e) => {
     const valor = campoNome.value;
-    mensagem.textContent = "Olá" + valor;
+    mensagem.textContent = "Olá " + valor;
     
     })
