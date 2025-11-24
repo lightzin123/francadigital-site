@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="site-header">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/josedudias/francadigital-assets/refs/heads/main/logo.png">
+        </div>
+        <div class="informacoes">
+            <p class="aluno">Projeto realizado por Arthur Gomes</p>
+            <h1 class="titulo-site">Qual site tem virus?</h1>
+        </div>
+        <div>
+            <nav class="site-nav">
+                <a href="/francadigital-site/index.html">Inicio</a>
+                <a href="/francadigital-site/projeto/index.html">Projeto</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+    </div>
+    <main class="page">
+        <section class="grid">
+            <article class="card">
+                <h2>1 - Alterar a cor do site</h2>
+                <p>Escolha uma cor: </p>
+                <input type="color" id="seletorCor" value="#000">
+                <button id="btnAplicarCor">Aplicar cor</button>
+
+            </article>
+            <article class="card">
+                <h2>2 - Galeria Dinâmica</h2>
+                <p>Clique para alterar a imagem</p>
+                <div class="chips">
+                    <button class="chip" data-image="https://images.unsplash.com/photo-1475070929565-c985b496cb9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGFya3xlbnwwfHwwfHx8MA%3D%3D">Floresta soft kawaii</button>
+                    <button class="chip" data-image="https://images.unsplash.com/photo-1500099817043-86d46000d58f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRhcmt8ZW58MHx8MHx8fDA%3D">Pessoa morrendo afogada</button>
+                    <button class="chip" data-image="https://images.unsplash.com/photo-1494376877685-d3d2559d4f82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRhcmt8ZW58MHx8MHx8fDA%3D">Cabana no meio do mato</button>
+                </div>
+                <div class="galeria" id="galeriaHero">
+
+                </div>
+            </article>
+            <article class="card">
+                <h2>3 - Google Maps</h2>
+                <p>Uni-FACEF</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.232753846313!2d-47.39188442467939!3d-20.537655530991657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a6227ac02f77%3A0x977eed5af75dd7a2!2sUni-FACEF!5e0!3m2!1spt-BR!2sbr!4v1763404221075!5m2!1spt-BR!2sbr" width="240" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
+
+        <a class="btn-whatsapp" href="https://wa.me/5516991474386" target="_blank" rel="noopener">
+            💬 Fale no Whatsapp
+        </a>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
