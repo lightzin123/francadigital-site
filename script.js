@@ -1,22 +1,22 @@
-const texto = document.getElementById('Textin').innerText;
-console.log(texto)
+const seletor = document.getElementById("seletorCor");
+const aplicador = document.getElementById("btnAplicarCor");
 
+aplicador.addEventListener("click", (e) => {
+    const cor = seletor.value;
+    document.documentElement.style.setProperty("--cor-fundo", cor)
+});
 
-const campoNome = document.getElementById("input");
-// (variavel) => {} -> Funcão anonima
+const chips = document.querySelectorAll(".chip");
+const galeria = document.getElementById("galeriaHero");
 
-campoNome.addEventListener("input", (e) => {
-    console.log(e.target.value)
-})
+const imagemInicial = chips[0].dataset.imagem;
 
-const caixa = document.getElementById("caixa");
-// caixa.innerHTML = ""
+galeria.style.backgroundImage = `url(${imagemInicial})`
 
-const mensagem = document.getElementById("msg");
-const butao = document.getElementById("btn");
-
-butao.addEventListener("click", (e) => {
-    const valor = campoNome.value;
-    mensagem.textContent = "Olá" + valor;
-    
+// forEach = para cada objeto (repetir)
+chips.forEach((chip) => {
+    chip.addEventListener("click", (e) => {
+        galeria.classList.add("ativa");
+        galeria.style.backgroundImage = `url(${chip.dataset.image})`;
     })
+})
