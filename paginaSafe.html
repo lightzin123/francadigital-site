@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ta safe</title>
+    <style>
+       
+        body {
+            background-color: black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        
+        h1 {
+            color: #00ff00; 
+            font-size: 2rem;
+            
+           
+            overflow: hidden;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            margin: 0 auto; 
+            letter-spacing: .15em; 
+            
+            /* Animações */
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+       
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        /* Animação do cursor piscando */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+        }
+
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1rem;
+                white-space: normal; 
+                border-right: none; 
+                animation: none; 
+            }
+        }
+    </style>
 </head>
 <body>
+    
     <h1>Ta sem virus amigão S2</h1>
+
 </body>
 </html>
