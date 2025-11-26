@@ -71,7 +71,7 @@
         }
 
         .aurabattle{
-            display: flex;
+            display: none; /* Colocar flex pra aperecer dnv no site*/
             align-items: center; /*texto na vertical*/
             justify-content: center; /*horizontal*/
             text-align: center; /*Centraliza o texto*/

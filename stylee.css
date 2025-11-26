@@ -32,7 +32,7 @@ body {
       rgba(56, 189, 248, 0.15),
       transparent 50%
     );
-  z-index: 0;
+  z-index: -999;
   filter: blur(0.4px);
 }
 
@@ -229,7 +229,7 @@ img:hover {
   box-shadow: 37, 211, 102, 0.45;
 }
 
- body {
+        body {
             margin: 0;
         }
 
@@ -249,6 +249,7 @@ img:hover {
             justify-content: space-between;
             gap: 16px;
             box-shadow: 0 10px 24px rgba(117, 13, 13, 0.534);
+            z-index: 1;
         }
 
         .informacoes .aluno {
@@ -261,4 +262,22 @@ img:hover {
             font-size: 18px;
             margin: 0;
             color: black;
+        }
+
+        .site-nav {
+            display: flex;
+            gap: 20px; 
+        }  
+        
+        .site-nav a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px; /* Letra um pouco maior */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .site-nav:hover {
+            text-decoration: underline;
         }
