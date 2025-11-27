@@ -3,10 +3,11 @@
             cursor: pointer;
             border-radius: 20px;
             box-shadow: 5px 5px 7px red;
-            transition: filter 0.3s ease;
+            transition: filter 0.3s ease, transform 0.4s ease;
         }
 
         .img:hover {
+            transform: translateY(-7px) scale(1.02);
             filter: brightness(0.6); 
         }
 
@@ -16,11 +17,12 @@
             height: 170px;
             border-radius: 20px;
             box-shadow: 5px 5px 7px red;
-            transition: filter 0.6s ease;
+            transition: filter 0.6s ease, transform 0.4s ease;
         }
 
         .gif:hover {
-            filter: brightness(0.19); /* Torna o gif mais escuro ao passar o mouse */
+            filter: brightness(0.19); 
+            transform: translateY(-7px) scale(1.02);
         }
 
         .container {
@@ -101,19 +103,29 @@
             align-items: center;
             justify-content: space-between;
             gap: 16px;
-            box-shadow: 0 10px 24px rgba(117, 13, 13, 0.534);
+            box-shadow: 0 14px 17px rgba(107, 10, 10, 0.726);
+            position: fixed;
+            top: -80px;
+            transition: top 0.4s ease-in-out;
+            z-index: 1000;
+        }
+
+        .site-header:hover {
+            top: 0;
         }
 
         .informacoes .aluno {
             font-size: 14px;
             color: grey;
             margin-bottom: 4px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         .informacoes .titulo-site {
             font-size: 18px;
             margin: 0;
             color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         .site-nav {
@@ -132,4 +144,26 @@
 
         .site-nav:hover {
             text-decoration: underline;
+        }
+
+        .btn-whatsapp {
+            position: fixed; 
+            bottom: 24px; 
+            right: 24px;
+            background: #25d366;
+            color: #ffffff;
+            padding: 14px 20px;
+            border-radius: 999px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0px 20px 35px rgba(37, 211, 102, 0.35);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+        .btn-whatsapp:hover {
+            transform: scale(1.07) translateY(-2px);
+            box-shadow: 37, 211, 102, 0.45;
         }

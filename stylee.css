@@ -248,8 +248,15 @@ img:hover {
             align-items: center;
             justify-content: space-between;
             gap: 16px;
-            box-shadow: 0 10px 24px rgba(117, 13, 13, 0.534);
-            z-index: 1;
+            box-shadow: 0 5px 17px rgba(85, 8, 8, 0.726);
+            position: fixed;
+            top: -80px;
+            transition: top 0.4s ease-in-out;
+            z-index: 1000;
+        }
+
+        .site-header:hover {
+            top: 0;
         }
 
         .informacoes .aluno {
